@@ -4,7 +4,7 @@
 
 @layer components {
     .sortable-transition {
-        transition: translate 125ms ease-in-out;
+        transition: translate 110ms ease-in-out;
     }
 
     /* bg-[url(assets/bg-mobile-light.jpg)] */

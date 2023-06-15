@@ -31,6 +31,10 @@ export default function TodoFooter() {
             <div className="md:hidden bg-white dark:bg-[hsl(235,24%,19%)] rounded mt-4 text-center space-x-5 py-3.5 shadow-2xl shadow-zinc-300 dark:shadow-zinc-900 text-xs md:text-sm">
                 <TodoFilters />
             </div>
+
+            <div className="text-xs text-center mt-12 text-[hsl(236,9%,61%)]">
+                Drag and drop to reorder list
+            </div>
         </>
     );
 }

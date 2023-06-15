@@ -2,32 +2,9 @@ import { create } from "zustand";
 import { immer } from "zustand/middleware/immer";
 import { persist } from "zustand/middleware";
 
-let todos = [
-    {
-        // id: crypto.randomUUID(),
-        id: 1,
-        todo: "Learn Golang",
-        isComplete: false,
-    },
-    {
-        // id: crypto.randomUUID(),
-        id: 2,
-        todo: "Master VueJS",
-        isComplete: false,
-    },
-    {
-        // id: crypto.randomUUID(),
-        id: 3,
-        todo: "Master Laravel",
-        isComplete: false,
-    },
-    {
-        // id: crypto.randomUUID(),
-        id: 4,
-        todo: "Learn NodeJS",
-        isComplete: false,
-    },
-];
+let todos = JSON.parse(
+    '[{"todo":"Complete online JavaScript course","id":"4f42c0b9-f986-4179-af52-c160b1a5f72a","isComplete":true},{"todo":"Jog around the park","id":"dc83c6cc-45b1-4e76-a5d8-8a8df678d389","isComplete":false},{"todo":"10 minutes meditation","id":"31c42185-db7c-4ea4-a225-75699fbf0d2d","isComplete":false},{"todo":"Read for 1 hour","id":"7dc0df06-7586-4c6f-aa77-2dad74efa7b4","isComplete":false},{"todo":"pick groceries","id":"259ecb7b-8b55-4f23-9684-8d51ed7f75fd","isComplete":false},{"todo":"Complete Todo App on Frontend Mentor","id":"b4a5496c-d134-48ff-8fe4-bbfbca50845f","isComplete":true}]'
+);
 
 let filters = {
     all: (todos) => todos,

@@ -99,7 +99,7 @@ export function useSortable(id, syncStateWithDOM) {
             );
 
             removeTranslateStyles(placeholderRef.current);
-        }, 125);
+        }, 110);
     }
 
     function handlePointerUp(e) {
