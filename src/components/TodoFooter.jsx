@@ -23,6 +23,7 @@ export default function TodoFooter() {
                 <button
                     className="text-[hsl(236,9%,61%)] dark:text-zinc-400 dark:hover:text-[hsl(236,33%,92%)]"
                     onClick={clearCompletedTodo}
+                    aria-label="clear completed todos"
                 >
                     Clear Completed
                 </button>

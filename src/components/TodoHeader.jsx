@@ -27,7 +27,13 @@ export default function TodoHeader() {
                 <h1 className="uppercase font-semibold text-2xl md:text-4xl text-white tracking-[12px]">
                     Todo
                 </h1>
-                <button className="-mt-2" onClick={handleThemeSwitcherClick}>
+                <button
+                    className="-mt-2"
+                    onClick={handleThemeSwitcherClick}
+                    aria-label={`${
+                        mode == "light" ? "light theme" : "dark theme"
+                    }`}
+                >
                     {mode == "light" ? <MoonIcon /> : <SunIcon />}
                 </button>
             </div>

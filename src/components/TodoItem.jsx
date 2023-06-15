@@ -34,6 +34,7 @@ export default function TodoItem({ todo }) {
                 <button
                     className="md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-150"
                     onClick={() => deleteTodo(todo.id)}
+                    aria-label="delete todo"
                 >
                     <CrossIcon />
                 </button>

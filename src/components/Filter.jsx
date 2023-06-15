@@ -13,6 +13,7 @@ export default function Filter({ filter, active, ...props }) {
                     : "text-[hsl(236,9%,61%)] hover:text-[hsl(235,19%,35%)] dark:text-zinc-400 dark:hover:text-[hsl(236,33%,92%)]"
             }`}
             onClick={() => setFilter(filter)}
+            aria-label={`apply ${filter} filter`}
         />
     );
 }
