@@ -7,11 +7,6 @@
         transition: translate 110ms ease-in-out;
     }
 
-    /* bg-[url(assets/bg-mobile-light.jpg)] */
-    /* md:bg-[url(assets/bg-desktop-light.jpg)] */
-    /* dark:bg-[url(assets/bg-mobile-dark.jpg)] */
-    /* dark:md:bg-[url(assets/bg-desktop-dark.jpg)] */
-
     .dark .header-bg {
         --background-url: url(assets/bg-mobile-dark.jpg);
     }

@@ -7,6 +7,7 @@ let centeringClasses = "flex items-center justify-center";
 export default function ToggleComplete({ isComplete, ...props }) {
     return (
         <button
+            aria-label={`${isComplete ? 'uncomplete' : 'complete'} todo`}
             {...props}
             className={`w-[19px] h-[19px] md:w-[24px] md:h-[24px] rounded-full relative hover:bg-gradient-to-br flexxitems-centerxjustify-center ${colorsClasses} ${centeringClasses} ${
                 isComplete ? "bg-gradient-to-br" : ""
